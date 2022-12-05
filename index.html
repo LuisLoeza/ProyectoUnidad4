@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final U4</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script src="wow.min.js"> </script>
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script src="fancybox/jquery.fancybox.js"></script>
+</head>
+</head>
+
+<body>
+    <aside class="aside">
+        <div class="aside_izq">
+            <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp;325 admiral unit, North cost,
+                USA</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp;&nbsp;info@example.com</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;0100123456789</a>
+        </div>
+        <div class="aside_der">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </aside>
+    <header class="header">
+        <div class="movil">
+            <figure class="figure_logo">
+                <img src="imagenes/Logo_header.png" alt="">
+            </figure>
+            <a href="#" id="abrirMenu" class="menu_movil"><i class="fa-sharp fa-solid fa-bars"></i></a>
+        </div>
+        <nav >
+            <ul id="contenedormenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Clients</a></li>
+            </ul>
+        </nav>
+    </header>
+    <i class="fa-solid fa-arrow-up btn_subir" id="subir"></i>
+    <section class="slideFotos">
+        <ul class="rslides">
+            <li><img src="imagenes/background_1.jpg" alt=""></li>
+            <li><img src="imagenes/background_2.jpg" alt=""></li>
+            <li><img src="imagenes/background_3.jpg" alt=""></li>
+        </ul>
+        <div class="informacion ancho">
+            <h6 id="a1" class="animate__animated animate__fadeInDownBig">LEAVE MONEY PROBLEM TO US & JUST</h6>
+            <H2 id="a2" class="animate__animated animate__backInUp">FOCUS ON YOUR BUSINESS</H2>
+            <p id="a3" class="animate__animated animate__backInUp">Moving forward you will be repaired with a highly
+                vetted, professional awal bookkeeper who will get to know.</p>
+            <div class="botones">
+                <a id="a4" href="#" class="btn1 animate__animated animate__fadeInLeft">Learn More</a>
+                <a id="a5" href="#" class="btn2 animate__animated animate__fadeInRight">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+    <section class="ancho">
+        <div class="modal2" id="modall2">
+            <div class="contenedor2">
+                <div class="cont_cerrar2">
+                    <div>
+                        <h2>Formulario de contacto</h2>
+                    </div>
+                    <div>
+                        <i id="btnCerrar2" class="cerrar fa-sharp fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                </div>
+                <div class="modal_contenido">
+                    <div class="contacto_izq">
+                        <h3>¡Si tienes alguna duda contactanos!</h3>
+                        <form>
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="email" placeholder="E-mail" required>
+                            <input type="tel" placeholder="Numero telefonico" required>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Escribenos tu duda" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="contacto_der">
+                       <h3>¡Nuestros medios de contacto!</h3>
+                       <div class="contact_der_cont">
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4>Visitanos</h4>
+                                <p>325 admiral unit, North cost, USA</p>
+                            </div>
+                        </div>
+                       <div class="contact_der_cont">
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Envianos un Email</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                       <div class="contact_der_cont">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Llamanos</h4>
+                                <p>0100123456789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_about ancho">
+        <div class="articulos">
+            <div class="titulo">
+                <span class="linea_arriba"></span>
+                <div class="titulo_cont">
+                    <h2>About Company</h2>
+                    <p>As always, partners grows with you!</p>
+                </div>
+                <span class="linea_abajo"></span>
+            </div>
+            <div class="subtitulo">
+                <p>Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepes eveniet ut etes
+                    seo lage voluptates repudiandae sint et molestiae non mes for Creating futures through building pres
+                    preservation.</p>
+            </div>
+            <div class="art_divididos">
+                <article>
+                    <i class="fa-solid fa-trophy"></i>
+                    <h4>Professional</h4>
+                    <p>Lorem ipsum dolor sit , consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+                        veniam.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4>Experienced</h4>
+                    <p>Lorem ipsum dolor sit , consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+                        veniam.</p>
+                </article>
+            </div>
+            <div class="art_divididos">
+                <article>
+                    <i class="fa-sharp fa-solid fa-building-columns"></i>
+                    <h4>Vibrant</h3>
+                        <p>Lorem ipsum dolor sit , consectet adipisi elit, sed do eiusmod tempor for enim adesg ens
+                            minim veniam.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h4>Personality</h4>
+                    <p>Lorem ipsum dolor sit , consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+                        veniam.</p>
+                </article>
+            </div>
+        </div>
+        <figure class="figure_section1">
+            <img src="imagenes/acerca.png" alt="">
+            <i id="btnAbrir" class="fa-regular fa-circle-play"></i>
+        </figure>
+        <div class="modal" id="modall">
+            <div class="contenedor">
+                <div class="cont_cerrar">
+                    <i id="btnCerrar" class="cerrar fa-sharp fa-solid fa-rectangle-xmark"></i>
+                </div>
+                <div id="contenedoryoutube">
+                    <iframe src="https://www.youtube.com/embed/7OMSU4X_eCY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parallax">
+        <article class="wow animate__animated animate__fadeInLeft">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-chart-simple"></i>
+            </div>
+            <div class="numeros">
+                <h3>459</h3>
+                <p>Projects completed</p>
+            </div>
+        </article>
+        <article class="wow animate__animated animate__fadeInDown">
+            <div class="icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="numeros">
+                <h3>28</h3>
+                <p>Consultans</p>
+            </div>
+        </article>
+        <article class="wow animate__animated animate__fadeInUp">
+            <div class="icon">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="numeros">
+                <h3>18</h3>
+                <p>Awards winning</p>
+            </div>
+        </article>
+        <article class="wow animate__animated animate__fadeInRight">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-building-columns"></i>
+            </div>
+            <div class="numeros">
+                <h3>50</h3>
+                <p>Years of Experiences</p>
+            </div>
+        </article>
+    </section>
+    <section class="services">
+        <div class="titulo_services">
+            <span class="linea_arriba"></span>
+            <div class="titulo_services_cont">
+                <h2>Our Services</h2>
+                <p>As always, partners grows with you!</p>
+            </div>
+            <span class="linea_abajo"></span>
+        </div>
+        <div id="slider1">
+            <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+            <div class="viewport">
+                <ul class="overview">
+                    <li>
+                        <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                        <h4>Taxation</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae, earum magni
+                                quasi tenetur eveniet accusamus voluptatem corrupti.</p>
+                            <a href="#">Learn More</a>
+                    </li>
+                    <li class="fondo_gris">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h4>Accumulation</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae, earum magni quasi
+                            tenetur eveniet accusamus voluptatem corrupti.</p>
+                        <a href="#">Learn More</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h4>Business Planning</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae, earum magni quasi
+                            tenetur eveniet accusamus voluptatem corrupti.</p>
+                        <a href="#">Learn More</a>
+                    </li>
+                    <li class="fondo_gris">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Risk Management</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae, earum magni
+                                quasi tenetur eveniet accusamus voluptatem corrupti.</p>
+                            <a href="#">Learn More</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </section>
+    <section class="section_galeria">
+        <div class="galeria">
+            <div class="ancho titulo_galeria">
+                <span class="linea_arriba"></span>
+                <div class="titulo_galeria_cont">
+                    <h2>Our Projects</h2>
+                    <p>As always, partners grows with you!</p>
+                </div>
+                <span class="linea_abajo"></span>
+            </div>
+            <div id="galeria" class="ancho contenedorFotos">
+                <div class="fotos_izq">
+                    <div class="fotos_izq_cont_arriba">
+                        <a href="imagenes/galeria_1.jpg" class="fancybox" title="IMG 1" rel="gallery1">
+                            <figure>
+                                <img src="imagenes/galeria_1.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="fotos_izq_cont">
+                        <a href="imagenes/galeria_2.jpg" class="fancybox" title="IMG 2" rel="gallery1">
+                            <figure>
+                                <img src="imagenes/galeria_2.jpg" alt="">
+                            </figure>
+                        </a>
+                        <a href="imagenes/galeria_3.jpg" class="fancybox" title="IMG 3" rel="gallery1">
+                            <figure>
+                                <img src="imagenes/galeria_3.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="fotos_der">
+                    <a href="imagenes/galeria_4.jpg" class="fancybox" title="IMG 3" rel="gallery1">
+                        <figure>
+                            <img src="imagenes/galeria_4.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ancho planes">
+            <article>
+                <div class="plan_arriba">
+                    <h3>Personal</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>30.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba plan_initial">
+                    <h3>Startup</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>60.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Business</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>75.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Corporation</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>98.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Personal</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>30.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Startup</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>60.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Business</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>75.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                    <!-- <p>Read More...</p> -->
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+            <article>
+                <div class="plan_arriba">
+                    <h3>Corporation</h3>
+                </div>
+                <div class="plan_abajo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est id ratione deserunt laudantium
+                        illo! Ipsam voluptate nihil iste?</p>
+                    <h4>Read more</h4>
+                    <div class="precio_circulo">
+                        <h2>98.<span>00$</span></h2>
+                        <p>Per month</p>
+                    </div>
+                </div>
+                <div class="info_planes">
+                    <p>Strategic Alliance</p>
+                    <p>Growth Expansion</p>
+                    <p>Business Planning</p>
+                    <p>Contract Negotiation</p>
+                    <p>Market Positioning</p>
+                    <a href="#">Get Plan</a>
+                </div>
+            </article>
+        </div>
+        <div class="ancho btn_contacto">
+            <div id="btnAbrir2">
+                <i class="fa-sharp fa-solid fa-square-envelope"> <span>CONTACTANOS</span></i>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="clients">
+            <div class="titulo_clients ancho">
+                <span class="linea_arriba"></span>
+                <div class="titulo_clients_cont">
+                    <h2>What Our Clients Stay</h2>
+                    <p>All what Customers said about us</p>
+                </div>
+                <span class="linea_abajo"></span>
+            </div>
+            <div id="slider2" class="ancho">
+                <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <div class="viewport">
+                    <ul class="overview">
+                        <li>
+                            <figure>
+                                <img src="imagenes/perfil1.jpg" alt="">
+                            </figure>
+                            <p>Imagination… What we can easily see is only a small percentage of what is possible.
+                                Logistics
+                                through innovation, dedication, and technology</p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/perfil2.jpg" alt="">
+                            </figure>
+                            <p>Imagination… What we can easily see is only a small percentage of what is possible.
+                                Logistics
+                                through innovation, dedication, and technology</p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/perfil3.jpg" alt="">
+                            </figure>
+                            <p>Imagination… What we can easily see is only a small percentage of what is possible.
+                                Logistics
+                                through innovation, dedication, and technology</p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/perfil4.jpg" alt="">
+                            </figure>
+                            <p>Imagination… What we can easily see is only a small percentage of what is possible.
+                            Logistics through innovation, dedication, and technology.</p>
+                        </li>
+                    </ul>
+                </div>
+                <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="map ancho">
+            <figure>
+                <img src="imagenes/map.png" alt="">
+            </figure>
+        </div>
+        <div class="section_acordeon ancho">
+            <div class="acordeon">
+                <div class="acordeon_titulo">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <h2>Locations 1</h2>
+                </div>
+                <div class="dis_none">
+                    <div class="acordeon_contenido">
+                        <div class="acordeon_contenido_div">
+                            <h2>Miami Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Florida Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Illinois Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>New York Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acordeon">
+                <div class="acordeon_titulo">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <h2>Locations 2</h2>
+                </div>
+                <div class="dis_none">
+                    <div class="acordeon_contenido dis_none">
+                        <div class="acordeon_contenido_div">
+                            <h2>Los Angeles Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Chicago Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Houston Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Philadelphia Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acordeon">
+                <div class="acordeon_titulo">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <h2>Locations 3</h2>
+                </div>
+                <div class="dis_none">
+                    <div class="acordeon_contenido">
+                        <div class="acordeon_contenido_div">
+                            <h2>Phoenix Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>San Antonio Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Los Angeles Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="acordeon_contenido_div">
+                            <h2>Chicago Office</h2>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 1234-456-789</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer ancho">
+            <div class="footer_sections">
+                <h3>Head Office</h3>
+                <div>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p>1422 Aqua blue Road St. Santa Rosa,tCA, USA.</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                    <p>info@example.com</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headphones"></i>
+                    <p>info@example.com</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>002- 01008431112</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>002- 01008431112</p>
+                </div>
+            </div>
+            <div class="footer_sections footer_btn">
+                <h3>Company Links</h3>
+                <a href="#"><i class="fa-solid fa-play"></i> Our History</a>
+                <a href="#"><i class="fa-solid fa-play"></i> Mission & Vision</a>
+                <a href="#"><i class="fa-solid fa-play"></i> Careers</a>
+                <a href="#"><i class="fa-solid fa-play"></i> Partners</a>
+                <a href="#"><i class="fa-solid fa-play"></i> Our Team</a>
+                <a href="#"><i class="fa-solid fa-play"></i> Our Testimonials</a>
+            </div>
+            <div class="footer_sections">
+                <h3>About Adidas</h3>
+                <p>The lysine contingency - it's intended to prevent the spread of the animals is case they ever got off
+                    the island. Dr. Wu inserted a gene that makes.</p>
+            </div>
+            <div class="footer_sections">
+                <h3>Our social</h3>
+                <div>
+                    <a href=""><i class="footer_redes fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="footer_redes fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="footer_redes fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="footer_redes fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="subfooter_cont ancho">
+                <div class="opciones">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Clients</a>
+                </div>
+                <div class="copy">
+                    <p>© 2021 Adidas - Powered By addamatic</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $("#subir").click(function () {
+                $("html,body").animate(
+                    {
+                        scrollTop: "0px",
+                    },
+                    1000
+                );
+            });
+        });
+
+        var fondomodal2 = document.getElementById("modall2");
+        var btn2 = document.getElementById("btnAbrir2");
+        var cerrar2 = document.getElementById("btnCerrar2");
+
+        btn2.onclick = function () {
+            fondomodal2.style.display = "flex";
+        };
+
+        cerrar2.onclick = function () {
+            fondomodal2.style.display = "none";
+        };
+        window.onclick = function (event) {
+            if (event.target == fondomodal2) {
+                fondomodal2.style.display = "none";
+            }
+        };
+        document.addEventListener('keydown', (event) => {
+            var name = event.key;
+            var code = event.code;
+            if (name == 'Escape') {
+                fondomodal2.style.display = "none";
+            }
+        }, false);
+
+
+        var fondomodal = document.getElementById("modall");
+        var btn = document.getElementById("btnAbrir");
+        var cerrar = document.getElementById("btnCerrar");
+
+        btn.onclick = function () {
+            fondomodal.style.display = "flex";
+        };
+
+        cerrar.onclick = function () {
+            fondomodal.style.display = "none";
+        };
+        window.onclick = function (event) {
+            if (event.target == fondomodal) {
+                fondomodal.style.display = "none";
+            }
+        };
+
+        document.addEventListener('keydown', (event) => {
+            var name = event.key;
+            var code = event.code;
+            if (name == 'Escape') {
+                fondomodal.style.display = "none";
+            }
+        }, false);
+
+
+        var a1 = document.getElementById('a1')
+        a1.style.setProperty('--animate-duration', '2s')
+        var a2 = document.getElementById('a2')
+        a2.style.setProperty('--animate-duration', '2s')
+        var a3 = document.getElementById('a3')
+        a3.style.setProperty('--animate-duration', '2s')
+        var a4 = document.getElementById('a4')
+        a4.style.setProperty('--animate-duration', '2s')
+        var a5 = document.getElementById('a5')
+        a5.style.setProperty('--animate-duration', '2s')
+
+        $(function () {
+            $(".rslides").responsiveSlides({
+                auto: true,
+                speed: 1000,
+                timeout: 3000,
+            });
+        });
+        $(".acordeon_titulo").click(function () {
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();
+        });
+        $("#abrirMenu").click(function () {
+        $("#contenedormenu").toggleClass("abrirmenu");
+        });
+        new WOW().init();
+        $(document).ready(function () {
+            $('#slider1').tinycarousel();
+            $('#slider2').tinycarousel();
+        });
+    </script>
+</body>
+
+</html>
