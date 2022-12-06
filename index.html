@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <aside class="aside">
+    <aside class="aside" >
+        <a name="home"></a>
         <div class="aside_izq">
             <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp;325 admiral unit, North cost,
                 USA</a>
@@ -29,10 +30,10 @@
             <a href="#"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;0100123456789</a>
         </div>
         <div class="aside_der">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </aside>
     <header class="header">
@@ -44,11 +45,11 @@
         </div>
         <nav >
             <ul id="contenedormenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Clients</a></li>
+                <li><a href="#home" class="btn_ancla">Home</a></li>
+                <li><a href="#about" class="btn_ancla">About</a></li>
+                <li><a href="#service" class="btn_ancla">Services</a></li>
+                <li><a href="#projects" class="btn_ancla">Projects</a></li>
+                <li><a href="#clients" class="btn_ancla">Clients</a></li>
             </ul>
         </nav>
     </header>
@@ -128,10 +129,11 @@
     </section>
     <section class="section_about ancho">
         <div class="articulos">
+            <a name="about"></a>
             <div class="titulo">
                 <span class="linea_arriba"></span>
                 <div class="titulo_cont">
-                    <h2>About Company</h2>
+                    <h2 id="about">About Company</h2>
                     <p>As always, partners grows with you!</p>
                 </div>
                 <span class="linea_abajo"></span>
@@ -224,10 +226,11 @@
         </article>
     </section>
     <section class="services">
+        <a name="service"></a>
         <div class="titulo_services">
             <span class="linea_arriba"></span>
             <div class="titulo_services_cont">
-                <h2>Our Services</h2>
+                <h2 id="service">Our Services</h2>
                 <p>As always, partners grows with you!</p>
             </div>
             <span class="linea_abajo"></span>
@@ -270,11 +273,12 @@
         </div>
     </section>
     <section class="section_galeria">
+        <a name="projects"></a>
         <div class="galeria">
             <div class="ancho titulo_galeria">
                 <span class="linea_arriba"></span>
                 <div class="titulo_galeria_cont">
-                    <h2>Our Projects</h2>
+                    <h2 id="projects">Our Projects</h2>
                     <p>As always, partners grows with you!</p>
                 </div>
                 <span class="linea_abajo"></span>
@@ -496,11 +500,12 @@
         </div>
     </section>
     <section>
+        <a name="clients"></a>
         <div class="clients">
             <div class="titulo_clients ancho">
                 <span class="linea_arriba"></span>
                 <div class="titulo_clients_cont">
-                    <h2>What Our Clients Stay</h2>
+                    <h2 id="clients">What Our Clients Stay</h2>
                     <p>All what Customers said about us</p>
                 </div>
                 <span class="linea_abajo"></span>
@@ -815,11 +820,11 @@
         <div class="subfooter">
             <div class="subfooter_cont ancho">
                 <div class="opciones">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Clients</a>
+                    <a href="#home" class="ancla">Home</a>
+                    <a href="#about" class="ancla">About Us</a>
+                    <a href="#services" class="ancla">Services</a>
+                    <a href="#projects" class="ancla">Projects</a>
+                    <a href="#clients" class="ancla">Clients</a>
                 </div>
                 <div class="copy">
                     <p>© 2021 Adidas - Powered By addamatic</p>
@@ -828,17 +833,16 @@
         </div>
     </footer>
     <script>
-        $(document).ready(function () {
-            $("#subir").click(function () {
-                $("html,body").animate(
-                    {
-                        scrollTop: "0px",
-                    },
-                    1000
-                );
-            });
+        $(".btn_ancla").click(function () {
+        var ancla = $(this).attr("href");
+        $("html,body").animate(
+            {
+            scrollTop: $(ancla).offset().top,
+            },
+            1000
+        );
+        $("#contenedormenu").toggleClass("abrirmenu");
         });
-
         var fondomodal2 = document.getElementById("modall2");
         var btn2 = document.getElementById("btnAbrir2");
         var cerrar2 = document.getElementById("btnCerrar2");
@@ -920,6 +924,16 @@
         $(document).ready(function () {
             $('#slider1').tinycarousel();
             $('#slider2').tinycarousel();
+        }); 
+        $(document).ready(function () {
+            $("#subir").click(function () {
+                $("html,body").animate(
+                    {
+                        scrollTop: "0px",
+                    },
+                    1000
+                );
+            });
         });
     </script>
 </body>
